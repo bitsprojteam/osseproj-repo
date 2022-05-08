@@ -1,6 +1,6 @@
-## Welcome to OSSE Group 33 page
+## Welcome to OSSE Group 33:vet-service page
 
-Description to be added based on the code in repo
+Python Django REST API service to ADD,UPDATE,VIEW,DELETE Vet details for pet-clinic app
 
 ### Team Members
 
