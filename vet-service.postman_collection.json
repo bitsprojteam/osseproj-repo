@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "e2f19cdf-c800-4d55-bf39-b085d7b14f1e",
+		"name": "vet-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get list of vets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8030/vet/8bc7ced9-8a26-455e-b0da-2516856121a4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"vet",
+						"8bc7ced9-8a26-455e-b0da-2516856121a4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get details of a vet using vetID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8030/vet/8bc7ced9-8a26-455e-b0da-2516856121a4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"vet",
+						"8bc7ced9-8a26-455e-b0da-2516856121a4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a vet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vet_firstname\": \"Lena\",\r\n    \"vet_lastname\": \"Mathew\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8030/vet/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"vet",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete vet using vetID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8030/vet/8bc7ced9-8a26-455e-b0da-2516856121a4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"vet",
+						"8bc7ced9-8a26-455e-b0da-2516856121a4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update vet details using vetID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vet_firstname\": \"Bhoomika\",\r\n    \"vet_lastname\": \"Roy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8030/vet/bc9be10e-5177-425b-896b-586998470d8d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"vet",
+						"bc9be10e-5177-425b-896b-586998470d8d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
