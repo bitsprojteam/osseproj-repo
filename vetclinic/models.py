@@ -13,6 +13,7 @@ class vet(models.Model):
     vetID = models.UUIDField(default=str_uuid,editable = False,unique=True)
     vet_firstname = models.CharField(max_length=30)
     vet_lastname = models.CharField(max_length=50)
+    vet_clinic = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.vet_firstname
+        return self.first_name + " " + self.last_name
